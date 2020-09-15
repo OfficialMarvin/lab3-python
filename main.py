@@ -5,7 +5,6 @@
 # Section: 1
 # Breakout: 2
 
-
 def sum_n(x):
   print(sumCalc(x))
 
