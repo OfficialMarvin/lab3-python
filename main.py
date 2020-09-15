@@ -5,14 +5,12 @@
 # Section: 1
 # Breakout: 2
 
-def sum_n(x):
-  print(sumCalc(x))
 
-def sumCalc(n):
+def sum_n(n):
   if(n <= 0):
     return n
   else:
-    return n + sumCalc(n-1)
+    return n + sum_n(n-1)
 
 def print_n(s, n):
   if(n <= 0):
@@ -25,7 +23,7 @@ def print_n(s, n):
 
 def run():
   num = int(input("Enter an int: "))
-  print("sum is " + str(sumCalc(num)) + ".")
+  print("sum is " + str(sum_n(num)) + ".")
   phrase = (input("Enter a string: "))
   print_n(phrase,num)
 
